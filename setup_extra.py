@@ -119,6 +119,9 @@ def _try_configure(include_dirs, library_dirs, try_function):
     l = library_dirs or l
     return i, l
 
+# OSX Homebrew location
+include_dirs='/usr/local/Cellar/graphviz/2.38.0/include'
+library_dirs='/usr/local/Cellar/graphviz/2.38.0/lib'
 
 def get_graphviz_dirs():
     """
